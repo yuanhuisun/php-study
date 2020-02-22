@@ -1,23 +1,23 @@
 # php-study
 This is for PHP learning, include Laraval framework
 
-#Windows上使用Vagrant打造Laravel Homestead可协同跨平台开发环境
+# Windows上使用Vagrant打造Laravel Homestead可协同跨平台开发环境
 
-##前言
+## 前言
 大家对VMware或者VirtualBox一定不会陌生，虚拟化的好处自然深入人心，而现在我们可以通过Vagrant搭建一套类似Laravel Homestead完整开发环境，这样极大的减少了架设开发环境的时间，同时还支持在Windows/Mac/Linux不同平台上分享定制包，统一团队之间的开发环境提高工作效率，而Docker的出现也让未来更值得期待。
 用Vagrant为自己打造一个奇妙的跨平台开发环境
 
 
 阅读原文 - http://wsgzao.github.io/post/vagrant/
 
-##扩展阅读
+## 扩展阅读
 
 Vagrant - https://www.vagrantup.com/
 Laravel Homestead - http://laravel.com/docs/5.1/homestead
 在windows下进行linux开发：利用Vagrant+virtualbox - http://blog.star7th.com/2015/06/1538.html
 在 Mac/win7 下上使用 Vagrant 打造本地开发环境 - http://segmentfault.com/a/1190000002645737
 
-##环境准备
+## 环境准备
 Git（非必需）
 PHP（非必需）
 Laravel（非必需）
@@ -26,12 +26,12 @@ Vagrant
 VirtualBox
 如果大家有需要离线安装欢迎直接留言回复哈
 
-##安装git
+## 安装git
 1.下载GitHub for Windows
 
 https://windows.github.com/
 
-##安装php
+## 安装php
 建议大家尽量安装当前最新版本的 PHP
 
 1.下载PHP
@@ -57,9 +57,9 @@ C:ProgramDataOracleJavajavapath;%SystemRoot%system32;%SystemRoot%;%SystemRoot%Sy
 
 5.使环境变量生效
 
-重启explorer.exe
+重启explorer.exe 
 
-##安装Laravel
+## 安装Laravel
 1.下载Laravel
 
 http://www.golaravel.com/download/
@@ -79,8 +79,8 @@ host 设置主机地址
 port 设置 web server 监听的端口号
 例如：php artisan serve --port=8888
 
-##安装Composer
-1.下载Composer-Setup.exe
+## 安装Composer
+1. 下载Composer-Setup.exe
 
 https://getcomposer.org/doc/00-intro.md#installation-windows
 
@@ -97,7 +97,7 @@ openssl.cafile=D:phpverifycacert.pem
 3.测试Composer
 
 composer -VComposer version 1.0-dev (d79427f1a7b15e8f4d46ce8124a4d0c58ba1479c) 2015-07-04 11:22:58
-##安装Vagrant
+## 安装Vagrant
 1.下载Vagrant
 
 https://www.vagrantup.com/downloads.html
@@ -109,7 +109,7 @@ https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/cen
 上面给出的是centos-6.6镜像下载链接，要下载其他镜像请访问官网
 http://www.vagrantbox.es/
 
-##安装VirtualBox
+## 安装VirtualBox
 BIOS里面开启CPU硬件虚拟化支持VT(Virtualization Technology)
 
 1.下载VirtualBox
@@ -123,7 +123,7 @@ E:VirtualBoxcentos-6.6-x86_64.box
 
 3.命令初始化Vagrant
 
-#切换VirtualBox目录e:cd .VirtualBox#输入命令初始化E:VirtualBox> vagrant init centos6.6A `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please readthe comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.#执行添加命令E:VirtualBox> vagrant box add centos6.6 centos-6.6-x86_64.box==> box: Adding box 'centos6.6' (v0) for provider:    box: Downloading: file://E:/VirtualBox/centos-6.6-x86_64.box    box: Progress: 100% (Rate: 670M/s, Estimated time remaining: --:--:--)==> box: Successfully added box 'centos6.6' (v0) for 'virtualbox'!#检查是否导入成功E:VirtualBox> vagrant box listcentos6.6 (virtualbox, 0)
+# 切换VirtualBox目录e:cd .VirtualBox#输入命令初始化E:VirtualBox> vagrant init centos6.6A `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please readthe comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.#执行添加命令E:VirtualBox> vagrant box add centos6.6 centos-6.6-x86_64.box==> box: Adding box 'centos6.6' (v0) for provider:    box: Downloading: file://E:/VirtualBox/centos-6.6-x86_64.box    box: Progress: 100% (Rate: 670M/s, Estimated time remaining: --:--:--)==> box: Successfully added box 'centos6.6' (v0) for 'virtualbox'!#检查是否导入成功E:VirtualBox> vagrant box listcentos6.6 (virtualbox, 0)
 Vagrant配置
 详细配置文档可以参考官方手册 - https://docs.vagrantup.com/v2/
 
@@ -158,7 +158,7 @@ vagrant resume （恢复虚拟机 ?? 与前面的暂停相对应）
 vagrant box remove centos6.6 （移除box，其中centos6.6是box名）
 vagrant destroy （删除虚拟机，删除后在当前虚拟机所做进行的除开Vagrantfile中的配置都不会保留）
 
-##Laravel Homestead
+## Laravel Homestead
 细节部分可参考官方文档 - http://laravel.com/docs/5.1/homestead
 
 1.下载安装包
