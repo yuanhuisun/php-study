@@ -12,18 +12,18 @@ This is for PHP learning, include Laraval framework
 
 ## 扩展阅读
 
-> Vagrant - https://www.vagrantup.com/
-> Laravel Homestead - http://laravel.com/docs/5.1/homestead
-> 在windows下进行linux开发：利用Vagrant+virtualbox - http://blog.star7th.com/2015/06/1538.html
-> 在 Mac/win7 下上使用 Vagrant 打造本地开发环境 - http://segmentfault.com/a/1190000002645737
+> Vagrant - https://www.vagrantup.com/  
+> Laravel Homestead - http://laravel.com/docs/5.1/homestead  
+> 在windows下进行linux开发：利用Vagrant+virtualbox - http://blog.star7th.com/2015/06/1538.html  
+> 在 Mac/win7 下上使用 Vagrant 打造本地开发环境 - http://segmentfault.com/a/1190000002645737  
 
 ## 环境准备
-> Git（非必需）
-> PHP（非必需）
-> Laravel（非必需）
-> Composer（非必需）
-> Vagrant
-> VirtualBox
+> Git（非必需）  
+> PHP（非必需）  
+> Laravel（非必需）  
+> Composer（非必需）  
+> Vagrant  
+> VirtualBox  
 如果大家有需要离线安装欢迎直接留言回复哈
 
 ## 安装git
