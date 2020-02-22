@@ -46,7 +46,7 @@ http://windows.php.net/download/
 
 右键计算机->高级系统设置->环境变量->系统变量->PATH
 
-C:ProgramDataOracleJavajavapath;%SystemRoot%system32;%SystemRoot%;%SystemRoot%System32Wbem;%SYSTEMROOT%System32WindowsPowerShellv1.0;C:nodejs;D:php;C:ProgramDataComposerSetupbin
+ C:ProgramDataOracleJavajavapath;%SystemRoot%system32;%SystemRoot%;%SystemRoot%System32Wbem;%SYSTEMROOT%System32WindowsPowerShellv1.0;C:nodejs;D:php;C:ProgramDataComposerSetupbin
 
 4.设置php.ini
 
@@ -70,13 +70,13 @@ http://www.golaravel.com/download/
 
 3.启动Laravel
 
-d:cd laravel-v5.1.4D:laravel-v5.1.4>php artisan serveLaravel development server started on http://localhost:8000/
+ d:cd laravel-v5.1.4D:laravel-v5.1.4>php artisan serveLaravel development server started on http://localhost:8000/
 在浏览器中访问http://localhost:8000/
 
 artisan 的 serve 命令还支持两个参数：
 
-host 设置主机地址
-port 设置 web server 监听的端口号
+ host 设置主机地址
+ port 设置 web server 监听的端口号
 例如：php artisan serve --port=8888
 
 ## 安装Composer
@@ -86,17 +86,21 @@ https://getcomposer.org/doc/00-intro.md#installation-windows
 
 2.配置Composer
 
-Loading composer repositories with package informationInstalling dependencies (including require-dev)SSL certificate problem, verify that the CA cert is OK. Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed”
+ Loading composer repositories with package information  
+ Installing dependencies (including require-dev)SSL certificate problem, verify that the CA cert is OK.   
+ Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed”  
+ 
 如果安装过程提示报错为缺少CA证书，下载cacert.pem到自定义路径
 http://curl.haxx.se/docs/caextract.html
 
 然后修改php.ini文件（1983行左右）
 
-openssl.cafile=D:phpverifycacert.pem
+ openssl.cafile=D:phpverifycacert.pem
 
 3.测试Composer
 
-composer -VComposer version 1.0-dev (d79427f1a7b15e8f4d46ce8124a4d0c58ba1479c) 2015-07-04 11:22:58
+ composer -VComposer version 1.0-dev (d79427f1a7b15e8f4d46ce8124a4d0c58ba1479c) 2015-07-04 11:22:58  
+ 
 ## 安装Vagrant
 1.下载Vagrant
 
@@ -119,11 +123,18 @@ https://www.virtualbox.org/wiki/Downloads
 2.导入镜像
 
 设置VirtualBox目录并拷贝镜像centos-6.6-x86_64.box
-E:VirtualBoxcentos-6.6-x86_64.box
+ E:VirtualBoxcentos-6.6-x86_64.box
 
 3.命令初始化Vagrant
 
-# 切换VirtualBox目录e:cd .VirtualBox#输入命令初始化E:VirtualBox> vagrant init centos6.6A `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please readthe comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.#执行添加命令E:VirtualBox> vagrant box add centos6.6 centos-6.6-x86_64.box==> box: Adding box 'centos6.6' (v0) for provider:    box: Downloading: file://E:/VirtualBox/centos-6.6-x86_64.box    box: Progress: 100% (Rate: 670M/s, Estimated time remaining: --:--:--)==> box: Successfully added box 'centos6.6' (v0) for 'virtualbox'!#检查是否导入成功E:VirtualBox> vagrant box listcentos6.6 (virtualbox, 0)
+## 切换VirtualBox目录  
+ e:cd .VirtualBox
+## 输入命令初始化  
+ E:VirtualBox> vagrant init   
+ centos6.6A `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please readthe comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.  
+## 执行添加命令  
+ E:VirtualBox> vagrant box add centos6.6   
+ centos-6.6-x86_64.box==> box: Adding box 'centos6.6' (v0) for provider:    box: Downloading: file://E:/VirtualBox/centos-6.6-x86_64.box    box: Progress: 100% (Rate: 670M/s, Estimated time remaining: --:--:--)==> box: Successfully added box 'centos6.6' (v0) for 'virtualbox'!#检查是否导入成功E:VirtualBox> vagrant box listcentos6.6 (virtualbox, 0)
 Vagrant配置
 详细配置文档可以参考官方手册 - https://docs.vagrantup.com/v2/
 
@@ -166,5 +177,9 @@ vagrant destroy （删除虚拟机，删除后在当前虚拟机所做进行的�
 vagrant box add laravel/homesteadE:Homestead>vagrant box add laravel/homestead==> box: Loading metadata for box 'laravel/homestead'    box: URL: https://atlas.hashicorp.com/laravel/homesteadThis box can work with multiple providers! The providers that itcan work with are listed below. Please review the list and choosethe provider you will be working with.1) virtualbox2) vmware_desktopEnter your choice: 1==> box: Adding box 'laravel/homestead' (v0.2.7) for provider: virtualbox    box: Downloading: https://vagrantcloud.com/laravel/boxes/homestead/versions/0.2.7/providers/virtualbox.box    box: Progress: 0% (Rate: 9d/s, Estimated time remaining: 0:05:30)11))
 由于国内网络环境问题建议离线下载后手动导入
 
-#输入命令初始化E:Homestead>vagrant init laravelA `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please readthe comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.#执行添加命令E:Homestead>vagrant box add laravel laravel.box==> box: Box file was not detected as metadata. Adding it directly...==> box: Adding box 'laravel' (v0) for provider:    box: Unpacking necessary files from: file://E:/Homestead/laravel.box    box: Progress: 100% (Rate: 141M/s, Estimated time remaining: --:--:--)==> box: Successfully added box 'laravel' (v0) for 'virtualbox'!#检查是否导入成功E:Homestead>vagrant box listcentos6.6 (virtualbox, 0)laravel   (virtualbox, 0)#启动Lavarel HomesteadE:Homestead>vagrant upBringing machine 'default' up with 'virtualbox' provider...==> default: Importing base box 'laravel'...==> default: Matching MAC address for NAT networking...==> default: Setting the name of the VM: Homestead_default_1437217549272_56101==> default: Clearing any previously set network interfaces...==> default: Preparing network interfaces based on configuration...    default: Adapter 1: nat==> default: Forwarding ports...    default: 22 => 2222 (adapter 1)==> default: Booting VM...==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2222    default: SSH username: vagrant    default: SSH auth method: private key    default: Warning: Connection timeout. Retrying...    default:    default: Vagrant insecure key detected. Vagrant will automatically replace    default: this with a newly generated keypair for better security.    default:    default: Inserting generated public key within guest...    default: Removing insecure key from the guest if it's present... default: Key inserted! Disconnecting and reconnecting using new SSH key... ==> default: Machine booted and ready! ==> default: Checking for guest additions in VM... default: The guest additions on this VM do not match the installed version of default: VirtualBox! In most cases this is fine, but in rare cases it can default: prevent things such as shared folders from working properly. If you see default: shared folder errors, please make sure the guest additions within the default: virtual machine match the version of VirtualBox you have installed on default: your host and reload your VM. default: default: Guest Additions Version: 4.3.14 default: VirtualBox Version: 5.0 ==> default: Mounting shared folders... default: /vagrant => E:/Homestead
+#输入命令初始化  
+ E:Homestead>vagrant init laravel  
+ A `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please readthe comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.
+#执行添加命令  
+ E:Homestead>vagrant box add laravel laravel.box==> box: Box file was not detected as metadata. Adding it directly...==> box: Adding box 'laravel' (v0) for provider:    box: Unpacking necessary files from: file://E:/Homestead/laravel.box    box: Progress: 100% (Rate: 141M/s, Estimated time remaining: --:--:--)==> box: Successfully added box 'laravel' (v0) for 'virtualbox'!#检查是否导入成功E:Homestead>vagrant box listcentos6.6 (virtualbox, 0)laravel   (virtualbox, 0)#启动Lavarel HomesteadE:Homestead>vagrant upBringing machine 'default' up with 'virtualbox' provider...==> default: Importing base box 'laravel'...==> default: Matching MAC address for NAT networking...==> default: Setting the name of the VM: Homestead_default_1437217549272_56101==> default: Clearing any previously set network interfaces...==> default: Preparing network interfaces based on configuration...    default: Adapter 1: nat==> default: Forwarding ports...    default: 22 => 2222 (adapter 1)==> default: Booting VM...==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2222    default: SSH username: vagrant    default: SSH auth method: private key    default: Warning: Connection timeout. Retrying...    default:    default: Vagrant insecure key detected. Vagrant will automatically replace    default: this with a newly generated keypair for better security.    default:    default: Inserting generated public key within guest...    default: Removing insecure key from the guest if it's present... default: Key inserted! Disconnecting and reconnecting using new SSH key... ==> default: Machine booted and ready! ==> default: Checking for guest additions in VM... default: The guest additions on this VM do not match the installed version of default: VirtualBox! In most cases this is fine, but in rare cases it can default: prevent things such as shared folders from working properly. If you see default: shared folder errors, please make sure the guest additions within the default: virtual machine match the version of VirtualBox you have installed on default: your host and reload your VM. default: default: Guest Additions Version: 4.3.14 default: VirtualBox Version: 5.0 ==> default: Mounting shared folders... default: /vagrant => E:/Homestead
 登录帐户vagrant/vagrant，开始全新的Laravel Homestead体验之旅吧。
