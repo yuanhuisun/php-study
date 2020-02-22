@@ -45,9 +45,10 @@ http://windows.php.net/download/
 3.添加环境变量
 
 右键计算机->高级系统设置->环境变量->系统变量->PATH
+````
 
  C:ProgramDataOracleJavajavapath;%SystemRoot%system32;%SystemRoot%;%SystemRoot%System32Wbem;%SYSTEMROOT%System32WindowsPowerShellv1.0;C:nodejs;D:php;C:ProgramDataComposerSetupbin
-
+````
 4.设置php.ini
 
 进入 PHP 安装目录（例如 D:php）。找到 php.ini-development 文件并复制一份到当前目录，重命名为 php.ini，修改以下配置
