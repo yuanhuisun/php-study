@@ -1,28 +1,28 @@
 # 使用composer创建项目
 
-## 使用composer初始化一个新项目
+## 使用composer初始化一个新项目  
 
-···
+```
 yuanhui.sun@DLC040186284953 MINGW64 /c/code/x-space
 $ composer init
 
   Welcome to the Composer config generator
 
 This command will guide you through creating your composer.json config.
-···
+```
 按提示依次输入package name（默认为当前用户/当前目录）/package描述/作者/稳定版本/packet类型（库/项目/元包/composer的plugin）/版权
-···
+```
 Package name (<vendor>/<name>) [yuanhui.sun/x-space]:
 Description []: x-space is a laravel project with pre-defined CRUD role-perssion
 Author [yuanhui.sun <yuanhui.sun@hotmail.com>, n to skip]:
 Minimum Stability []:
 Package Type (e.g. library, project, metapackage, composer-plugin) []: project
 License []: MIT
-····
+```
 
 然后定义项目的dependencies，按照提示，查找/确定项目需要的包；
 
-····
+```
 Define your dependencies.
 
 Would you like to define your dependencies (require) interactively [yes]? yes
@@ -111,16 +111,16 @@ phpunit/php-code-coverage suggests installing ext-pcov (*)
 phpunit/php-code-coverage suggests installing ext-xdebug (*)
 Writing lock file
 Generating autoload files
-···
+```
 
 这样一个新项目就建立好了
-···
+```
 yuanhui.sun@DLC040186284953 MINGW64 /c/code/x-space
 $ ls
 composer.json  composer.lock  vendor/
-···
+```
 相应的package都安装在vendor下面
-···
+```
 yuanhui.sun@DLC040186284953 MINGW64 /c/code/x-space/vendor
 $ ls
 autoload.php  dragonmantank/  league/   paragonie/  ramsey/       tijsverkoyen/
@@ -128,4 +128,4 @@ bin/          egulias/        monolog/  phpoption/  sebastian/    vlucas/
 composer/     fideloper/      nesbot/   phpunit/    swiftmailer/
 dnoegel/      jakub-onderka/  nikic/    psr/        symfony/
 doctrine/     laravel/        opis/     psy/        theseer/
-····
+```
