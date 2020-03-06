@@ -3,7 +3,7 @@
 ## 使用composer初始化一个新项目  
 
 ```
-yuanhui.sun@DLC040186284953 MINGW64 /c/code/x-space
+user@laptop MINGW64 /c/code/x-space
 $ composer init
 
   Welcome to the Composer config generator
@@ -115,13 +115,13 @@ Generating autoload files
 
 这样一个新项目就建立好了
 ```
-yuanhui.sun@DLC040186284953 MINGW64 /c/code/x-space
+user@laptop MINGW64 /c/code/x-space
 $ ls
 composer.json  composer.lock  vendor/
 ```
 相应的package都安装在vendor下面
 ```
-yuanhui.sun@DLC040186284953 MINGW64 /c/code/x-space/vendor
+user@laptop MINGW64 /c/code/x-space/vendor
 $ ls
 autoload.php  dragonmantank/  league/   paragonie/  ramsey/       tijsverkoyen/
 bin/          egulias/        monolog/  phpoption/  sebastian/    vlucas/
