@@ -44,7 +44,7 @@
 右键计算机->高级系统设置->环境变量->系统变量->PATH
 ````
 
- C:ProgramDataOracleJavajavapath;%SystemRoot%system32;%SystemRoot%;%SystemRoot%System32Wbem;%SYSTEMROOT%System32WindowsPowerShellv1.0;C:nodejs;D:php;C:ProgramDataComposerSetupbin
+ C:\\Program Data\\Oracle\\Java\\javapath;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\Windows\\PowerShellv1.0;C:\\nodejs;D:\\php;C:\\Program Data\\Composer\\Setup\\bin
 ````
 4.设置php.ini
 
@@ -68,9 +68,9 @@ http://www.golaravel.com/download/
 
 3.启动Laravel
 ````
- d:cd laravel-v5.1.4  
- D:laravel-v5.1.4>php artisan serve  
- Laravel development server started on http://localhost:8000/
+ d:\\\>cd laravel-v5.1.4  
+ D:\\laravel-v5.1.4>php artisan serve  
+ Laravel development server started on http:\/\/localhost:8000//
 ````
 在浏览器中访问http://localhost:8000/
 
@@ -124,17 +124,18 @@ BIOS里面开启CPU硬件虚拟化支持VT(Virtualization Technology)
 ### 2.导入镜像
 
 设置VirtualBox目录并拷贝镜像centos-6.6-x86_64.box
- E:VirtualBoxcentos-6.6-x86_64.box
-
+```
+ E:\\VirtualBox\\centos-6.6-x86_64.box
+```
 ### 3.命令初始化Vagrant
 
 #### 切换VirtualBox目录  
 ````
- e:cd .VirtualBox  
+ e:\\\>cd .VirtualBox  
 ````
 #### 输入命令初始化  
 ````
- E:VirtualBox> vagrant init   
+ E:\\VirtualBox\> vagrant init   
  centos6.6A `Vagrantfile` has been placed in this directory. You are nowready to `vagrant up` your first virtual environment! Please read
  the comments in the Vagrantfile as well as documentation on`vagrantup.com` for more information on using Vagrant.  
 ````
@@ -148,7 +149,8 @@ BIOS里面开启CPU硬件虚拟化支持VT(Virtualization Technology)
 ```
 #### 检查是否导入成功  
 ```
-E:VirtualBox> vagrant box listcentos6.6 (virtualbox, 0)
+E:\\VirtualBox\> vagrant box list
+centos6.6 (virtualbox, 0)
 ```
 #### Vagrant配置
 详细配置文档可以参考官方手册 - https://docs.vagrantup.com/v2/
@@ -245,7 +247,12 @@ Bringing machine 'default' up with 'virtualbox' provider...
 通过Shell进入目录E:VirtualBox后执行命令
 
 ````
-vagrant packagevagrant package --output NAME --vagrantfile FILE#可选参数：--output NAME ： （可选）设置通过NAME来指定输出的文件名--vagrantfile FILE：（可选）可以将Vagrantfile直接封进box中
+vagrant package
+
+vagrant package --output NAME --vagrantfile FILE
+#可选参数：
+--output NAME ： （可选）设置通过NAME来指定输出的文件名  
+--vagrantfile FILE：（可选）可以将Vagrantfile直接封进box中
 ````
 完成后会在当前目录就会生成package.box，可以在家或者团队成员共享开发环境保持一致性
 
