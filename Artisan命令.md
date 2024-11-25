@@ -1,4 +1,5 @@
 php artisan --help
+```
 Description:
   List commands
 
@@ -201,3 +202,4 @@ Available commands:
   view:clear                Clear all compiled view files
  ziggy
   ziggy:generate            Generate a JavaScript file containing Ziggy’s routes and configuration.
+```
