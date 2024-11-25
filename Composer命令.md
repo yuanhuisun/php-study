@@ -1,4 +1,4 @@
-
+```
    ______
   / ____/___  ____ ___  ____  ____  ________  _____
  / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
@@ -6,10 +6,10 @@
 \____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
                     /_/
 Composer version 2.7.1 2024-02-09 15:26:28
-
+```
 Usage:
   command [options] [arguments]
-
+```
 Options:
   -h, --help                     Display help for the given command. When no command is given display help for the list command
   -q, --quiet                    Do not output any message
@@ -22,8 +22,9 @@ Options:
   -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
       --no-cache                 Prevent use of the cache
   -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
-
+```
 Available commands:
+```
   about                Shows a short information about Composer
   archive              Creates an archive of this composer package
   audit                Checks for security vulnerability advisories for installed packages
@@ -58,3 +59,4 @@ Available commands:
   suggests             Shows package suggestions
   update               [u|upgrade] Updates your dependencies to the latest version according to composer.json, and updates the composer.lock file
   validate             Validates a composer.json and composer.lock
+```
