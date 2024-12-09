@@ -29,3 +29,5 @@ Create a Laravel Real Time Chat - https://laravel-news.com/laravel-real-time-cha
 Modelling a Business Processes in Laravel - https://laravel-news.com/modelling-busines-processes-in-laravel
 Build a Kanban Board with Laravel - https://laravel-news.com/building-a-kanban-board-with-laravel
 Build Your Own Laravel Packages - https://laravel-news.com/building-your-own-laravel-packages
+https://laravel-news.com/laravel-route-organization-tips
+https://laravel-news.com/laravel-gates-policies-guards-explained
