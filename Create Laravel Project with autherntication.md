@@ -24,7 +24,7 @@ php artisan ui vue --auth
 
 # Laravel News - Good Examples to start with
 Create a PHP package from Scratch - https://laravel-news.com/create-a-php-package-from-scratch
-https://laravel-news.com/api-versioning-in-laravel-11
-https://laravel-news.com/laravel-real-time-chat
-https://laravel-news.com/modelling-busines-processes-in-laravel
+API Versioning in Laravel 11 - https://laravel-news.com/api-versioning-in-laravel-11
+Create a Laravel Real Time Chat - https://laravel-news.com/laravel-real-time-chat
+Modelling a Business Processes in Laravel - https://laravel-news.com/modelling-busines-processes-in-laravel
 Build a Kanban Board with Laravel - https://laravel-news.com/building-a-kanban-board-with-laravel
