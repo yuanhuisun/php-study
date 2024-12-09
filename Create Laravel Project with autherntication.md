@@ -28,3 +28,4 @@ API Versioning in Laravel 11 - https://laravel-news.com/api-versioning-in-larave
 Create a Laravel Real Time Chat - https://laravel-news.com/laravel-real-time-chat
 Modelling a Business Processes in Laravel - https://laravel-news.com/modelling-busines-processes-in-laravel
 Build a Kanban Board with Laravel - https://laravel-news.com/building-a-kanban-board-with-laravel
+Build Your Own Laravel Packages - https://laravel-news.com/building-your-own-laravel-packages
