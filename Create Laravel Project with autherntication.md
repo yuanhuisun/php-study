@@ -20,3 +20,11 @@ php artisan ui vue --auth
 ```
 
 这样，一个全新laravel项目就建立好了，并且具备了简单的授权管理。
+
+
+# Laravel News - Good Examples to start with
+Create a PHP package from Scratch - https://laravel-news.com/create-a-php-package-from-scratch
+https://laravel-news.com/api-versioning-in-laravel-11
+https://laravel-news.com/laravel-real-time-chat
+https://laravel-news.com/modelling-busines-processes-in-laravel
+Build a Kanban Board with Laravel - https://laravel-news.com/building-a-kanban-board-with-laravel
